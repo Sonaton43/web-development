@@ -1,0 +1,932 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-5-5 {width: 48%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (min-width: 768px) {
+.menu1{
+  background-color: #81ac27;
+  height: 40px;
+}
+.menu2{
+  background: #fff;
+  height: 100px;
+}
+.slider .img_txt{
+  color: white;
+  position: absolute;
+  margin: 0px auto;
+  top: 25%;
+  left: 15%;
+}
+.slider .img_txt .button1{
+  height: 40px;
+  width: 120px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 25px;
+  margin: 10px;
+}
+.slider .img_txt .button2{
+  height: 40px;
+  width: 120px;
+  border: none;
+  color: #81ac27;
+  background: #fff;
+  border-radius: 25px;
+  margin: 10px;
+}
+.logo{
+  align-content: justify;
+  height: auto;
+  float: left;
+}
+.logo img{
+  padding-top: 35px;
+  margin-top: 0px auto;
+  width: 100%;
+  height: 100%;
+}
+.search{
+  float: left;
+  padding-top: 15px;
+}
+.search .box{
+  position: relative;
+  height: 50px;
+  border: none;
+  max-width: 280px;
+  margin: auto;
+  border-radius: 25px;
+}
+.search .box input{
+  border: 1px solid;
+  border-color: #81ac27;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  padding-left: 20px;
+  color: #81ac27;
+  font-size: 18px;
+}
+.search .box .icon{
+  position: absolute;
+  color: #81ac27;
+  right: -20px;
+  top: 0;
+  width: 50px;
+  height: auto;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 0px 25px 25px 0px;
+}
+.chart{
+  float: left;
+}
+.chart a i{
+  color: #81ac27;
+  position: relative;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 5px;
+}
+.organic_contetnt{
+  top: -60px;
+  position: relative;
+  margin: 0px auto;
+}
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+.menu1{
+  background-color: #81ac27;
+  height: 80px;
+}
+.menu2{
+  background: #fff;
+  height: 80px;
+}
+.slider .img_txt{
+  color: white;
+  position: absolute;
+  margin: 0px auto;
+  top: 20%;
+  left: 15%;
+}
+.slider .img_txt h3{
+  font-size: 14px;
+}
+.slider .img_txt h1{
+  font-size: 18px;
+}
+.slider .img_txt p{
+  font-size: 12px;
+}
+.slider .img_txt .button1{
+  height: 30px;
+  width: 100px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 15px;
+  margin: 5px;
+}
+.slider .img_txt .button2{
+  height: 30px;
+  width: 100px;
+  border: none;
+  color: #81ac27;
+  background: #fff;
+  border-radius: 15px;
+  margin: 5px;
+}
+.logo{
+  align-content: justify;
+  height: auto;
+  float: left;
+}
+.logo img{
+  padding-top: 35px;
+  margin-top: 0px auto;
+  width: 100%;
+  height: 100%;
+}
+.search{
+  float: left;
+  padding-top: 15px;
+}
+.search .box{
+  position: relative;
+  height: 50px;
+  border: none;
+  max-width: 280px;
+  margin: auto;
+  border-radius: 25px;
+}
+.search .box input{
+  border: 1px solid;
+  border-color: #81ac27;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  padding-left: 20px;
+  color: #81ac27;
+  font-size: 18px;
+}
+.search .box .icon{
+  position: absolute;
+  color: #81ac27;
+  right: -20px;
+  top: 0;
+  width: 50px;
+  height: auto;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 0px 25px 25px 0px;
+}
+.chart{
+  float: left;
+}
+.chart a i{
+  color: #81ac27;
+  position: relative;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 5px;
+}
+.organic_contetnt{
+  top: -30px;
+  position: relative;
+  margin: 0px auto;
+}
+
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+.menu1{
+  background-color: #81ac27;
+  height: 120px;
+}
+.menu2{
+  background: #fff;
+  height: 230px;
+}
+.slider .img_txt{
+  color: white;
+  position: absolute;
+  margin: 0px auto;
+  top: 3%;
+  left: 15%;
+}
+.slider .img_txt h3{
+  font-size: 12px;
+}
+.slider .img_txt h1{
+  font-size: 18px;
+}
+.slider .img_txt p{
+  font-size: 10px;
+}
+.slider .img_txt .button1{
+  height: 25px;
+  width: 100px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 15px;
+  margin: 0px;
+}
+.slider .img_txt .button2{
+  height: 25px;
+  width: 100px;
+  border: none;
+  color: #81ac27;
+  background: #fff;
+  border-radius: 15px;
+  margin: 0px;
+}
+.organic_contetnt{
+  top: -20px;
+  position: relative;
+  margin: 0px auto;
+}
+}
+
+
+
+
+.row1{
+  margin: 0px auto;
+}
+.col1{
+  float: left;
+}
+.col1 a{
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.col1 a i{
+  padding: 11px;
+}
+
+.col2{
+  float: left;
+}
+.col2 a{
+  margin-left: 0px; 
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.col2 a i{
+  padding: 11px;
+}
+
+.col3{
+  float: left;
+}
+.col3 a{
+  margin-left: 0px; 
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.col3 a i{
+  padding: 11px;
+}
+
+.col4{
+  float: left;
+}
+.col4 a{
+  margin-left: 0px; 
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.col4 a i{
+  padding: 11px;
+}
+
+.col5{
+  float: left;
+}
+.col5 a{
+  margin-left: 0px; 
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.col5 a i{
+  padding: 11px;
+}
+
+.row2{
+  margin: 0px auto;
+}
+
+
+
+.chart a i::after{
+  position: absolute;
+  background: #81ac27;
+  padding: 3px;
+  border-radius: 20px;
+  content: "22";
+  font-size: 9px;
+  color: white;
+  text-align: center;
+  top: 0px;
+  left: 15px;
+}
+
+.menu3{
+  height: 50px;
+  background-color: #152932;
+}
+
+.menu3 ul {
+  width: 70%;
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 0;
+  overflow: hidden;
+  border: 0px solid #e7e7e7;
+  background-color: #152932;
+}
+
+.menu3 li {
+  float: left;
+}
+
+.menu3 li a {
+  color:#fff;
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.menu3 li:hover{
+  background-color: #81ac27;
+}
+
+
+.slider{
+  position: relative;
+  width: 100%;
+}
+
+.slider img{
+  position: relative;
+  width: 100%;
+}
+
+
+
+.organic_contetnt .organicfood1{
+  margin: 1%;
+  float: left;
+}
+.organic_contetnt .organicfood1 img{
+  width: 100%;
+}
+.organic_contetnt .organicfood2{
+  margin: 1%;
+  float: left;
+}
+.organic_contetnt .organicfood2 img{
+  width: 100%;
+}
+.organic_contetnt .organicfood3{
+  margin: 1%;
+  float: left;
+}
+.organic_contetnt .organicfood3 img{
+  width: 100%;
+}
+.organic_contetnt .organicfood_txt {
+  margin: 1%;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+}
+.organicfood_txt ul{
+  list-style: none;
+  left: -50px;
+  position: absolute;
+
+}
+.organicfood_txt ul li i{
+  color: #81ac27;
+  padding:10px;
+}
+.profile{
+  margin-top: 180px; 
+  height: 68px;
+  width: 68px;
+  border: 1px solid black;
+  border-radius: 50%;
+  float: left;
+}
+.profile img{
+  padding: 4px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.name{
+  margin-top: 190px;
+  margin-left: 15px;
+  float: left;
+}
+.name h3, .name p{
+  margin: 0;
+}
+
+.trending_products{
+  width: 70%;
+  padding-top: 10px;
+  margin: 0px auto;
+}
+.trending_products p, .trending_products h2{
+  text-align: center;
+}
+.trending_products .cart{
+  width: 20%;
+  margin: 23px;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.trending_products .cart img{
+  width: 100%;
+  height: 100%;
+}
+.trending_products .cart p{
+  padding-top: 15px;
+  text-align: center;
+}
+.btn{
+  margin-left: 43%;
+}
+.button {
+  height: 40px;
+  width: 120px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.banner1{
+  position: relative;
+  width: 100%;
+}
+.banner1 img{
+  width: 100%;
+}
+.banner1 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  top: 10%;
+  left: 15%;
+}
+.banner1 .img_txt .button{
+  height: 40px;
+  width: 120px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.mostview_products{
+  width: 70%;
+  padding-top: 10px;
+  margin: 0px auto;
+}
+.mostview_products p, .mostview_products h2{
+  text-align: center;
+}
+.mostview_products .cart{
+  width: 20%;
+  margin: 23px;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.mostview_products .cart img{
+  width: 100%;
+  height: 100%;
+}
+.mostview_products .cart p{
+  padding-top: 15px;
+  text-align: center;
+}
+
+.mostview_contetnt{
+  position: relative;
+  width: 70%;
+  margin: 0px auto;
+}
+.mostview_contetnt .mostviewfood1{
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+.mostview_contetnt .mostviewfood1 img{
+  width: 100%;
+}
+.mostview_contetnt .mostviewfood2{
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+.mostview_contetnt .mostviewfood2 img{
+  width: 100%;
+}
+.mostview_contetnt ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mostview_contetnt li {
+  float: right;
+}
+
+.mostview_contetnt li a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.mostview_contetnt li a:hover{
+  color: #81ac27;
+}
+
+.featured_products{
+  position: relative;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.featured_products .product1{
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+.featured_products .product1 img{
+  width: 100%;
+}
+.featured_products .product2{
+  width: 48%;
+  margin: 1%;
+  float: left;
+}
+.featured_products .foodproduct{
+  width: 40%;
+  margin: 20px;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.featured_products .foodproduct img{
+  width: 100%;
+  height: 100%;
+}
+.featured_products .foodproduct p{
+  padding-top: 15px;
+  text-align: center;
+}
+
+.banner2{
+  position: relative;
+  width: 100%;
+}
+.banner2 img{
+  width: 100%;
+}
+.banner2 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  bottom: 60px;
+  left: 15%;
+}
+.ourblog{
+  width: 70%;
+  margin: 0px auto;
+}
+.ourblog h2{
+  text-align: center;
+}
+.ourblog .blog{
+  width: 30%;
+  padding: 15px;
+  float: left;
+}
+.ourblog .blog img{
+  width: 100%;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
