@@ -86,9 +86,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@media only screen and (min-width: 768px) {
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
+.col-2-5 {width: 21%;}
 .col-3 {width: 25%;}
+.col-3-3 {width: 30%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
 .col-5-5 {width: 48%;}
@@ -99,7 +103,6 @@ textarea {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-@media only screen and (min-width: 768px) {
 .menu1{
   background-color: #81ac27;
   height: 40px;
@@ -193,6 +196,68 @@ textarea {
   position: relative;
   margin: 0px auto;
 }
+.btn{
+  margin-left: 40%;
+}
+.banner1 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  top: 8%;
+  left: 15%;
+}
+.banner1 .img_txt .button{
+  height: 40px;
+  width: 120px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 25px;
+  margin-top: -50px;
+}
+.mostview_contetnt .mostviewfood1{
+  margin: 1%;
+  float: left;
+}
+.mostview_contetnt .mostviewfood2{
+  margin: 1%;
+  float: left;
+}
+.trending_products .cart{
+  margin: 2%;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.mostview_products .cart{
+  margin: 2%;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.featured_products .product1{
+  margin: 1%;
+  float: left;
+}
+.featured_products .product2{
+  margin: 1%;
+  float: left;
+}
+.featured_products .foodproduct{
+  margin: 4%;
+  float: left;
+  text-align: center;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.mostview_products .foodproduct p{
+  padding-top: 0px;
+  text-align: center;
+}
+.banner2 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  bottom: 15px;
+  left: 15%;
+}
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -201,6 +266,7 @@ textarea {
 .col-md-3 {width: 25%;}
 .col-md-4 {width: 33.33%;}
 .col-md-5 {width: 41.66%;}
+.col-md-5-5 {width: 48%;}
 .col-md-6 {width: 50%;}
 .col-md-7 {width: 58.33%;}
 .col-md-8 {width: 66.66%;}
@@ -213,6 +279,7 @@ textarea {
   height: 80px;
 }
 .menu2{
+  overflow: hidden;
   background: #fff;
   height: 80px;
 }
@@ -310,6 +377,80 @@ textarea {
   position: relative;
   margin: 0px auto;
 }
+.btn{
+  margin-left: 30%;
+}
+.banner1 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  top: 8%;
+  left: 15%;
+}
+.banner1 .img_txt h3{
+  font-size: 14px;
+}
+.banner1 .img_txt h1{
+  font-size: 18px;
+}
+.banner1 .img_txt .button{
+  height: 30px;
+  width: 120px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 25px;
+  margin-top: -50px;
+}
+.mostview_contetnt .mostviewfood1{
+  margin: 10px;
+  float: left;
+}
+.mostview_contetnt .mostviewfood2{
+  margin: 10px;
+  float: left;
+}
+.trending_products .cart{
+  margin: 4%;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.mostview_products .cart{
+  margin: 4%;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.featured_products .product1{
+  margin: 1%;
+  float: left;
+}
+.featured_products .product2{
+  margin: 1%;
+  float: left;
+}
+.featured_products .foodproduct{
+  margin: 4%;
+  float: left;
+  text-align: center;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.mostview_products .foodproduct p{
+  padding-top: 15px;
+  text-align: center;
+}
+.banner2 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  bottom: 20px;
+  left: 15%;
+}
+.banner2 .img_txt h3{
+  font-size: 14px;
+}
+.banner2 .img_txt h1{
+  font-size: 18px;
+}
 
 }
 @media only screen and (max-width: 500px) {
@@ -331,24 +472,25 @@ textarea {
   height: 120px;
 }
 .menu2{
+  overflow: hidden;
   background: #fff;
-  height: 230px;
+  height: 80px;
 }
 .slider .img_txt{
   color: white;
   position: absolute;
   margin: 0px auto;
-  top: 3%;
+  top: 2%;
   left: 15%;
 }
 .slider .img_txt h3{
-  font-size: 12px;
+  font-size: 11px;
 }
 .slider .img_txt h1{
-  font-size: 18px;
+  font-size: 17px;
 }
 .slider .img_txt p{
-  font-size: 10px;
+  font-size: 9px;
 }
 .slider .img_txt .button1{
   height: 25px;
@@ -369,9 +511,78 @@ textarea {
   margin: 0px;
 }
 .organic_contetnt{
-  top: -20px;
+  top: -15px;
   position: relative;
   margin: 0px auto;
+}
+.chart{
+
+  float: left;
+}
+.chart a i{
+  color: #81ac27;
+  position: relative;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 5px;
+}
+.banner1 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  top: 8%;
+  left: 15%;
+}
+.banner1 .img_txt h3{
+  font-size: 9px;
+}
+.banner1 .img_txt h1{
+  margin-top: -5px;
+  font-size: 13px;
+}
+.banner1 .img_txt .button{
+  height: 25px;
+  width: 120px;
+  border: none;
+  color: white;
+  background: #81ac27;
+  border-radius: 25px;
+  margin-top: -50px;
+}
+.trending_products .cart{
+  margin: 4%;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.mostview_products .cart{
+  margin: 4%;
+  float: left;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.featured_products .product1{
+  margin: 1%;
+  float: left;
+}
+.featured_products .product2{
+  margin: 1%;
+  float: left;
+}
+.featured_products .foodproduct{
+  margin: 4%;
+  float: left;
+  text-align: center;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.mostview_products .foodproduct p{
+  padding-top: 15px;
+  text-align: center;
+}
+.banner2 .img_txt{
+  color: black;
+  position: absolute;
+  margin: 0px auto;
+  bottom: 6px;
+  left: 15%;
 }
 }
 
@@ -501,6 +712,7 @@ textarea {
 }
 
 .slider img{
+  filter: brightness(50%);
   position: relative;
   width: 100%;
 }
@@ -522,7 +734,9 @@ textarea {
   width: 100%;
 }
 .organic_contetnt .organicfood3{
-  margin: 1%;
+  margin-left:  9%;
+  margin-right:  7%;
+  margin-top:  1%;
   float: left;
 }
 .organic_contetnt .organicfood3 img{
@@ -531,21 +745,17 @@ textarea {
 .organic_contetnt .organicfood_txt {
   margin: 1%;
   float: left;
-  position: relative;
   margin-bottom: 30px;
 }
 .organicfood_txt ul{
   list-style: none;
   left: -50px;
-  position: absolute;
-
 }
 .organicfood_txt ul li i{
   color: #81ac27;
   padding:10px;
 }
 .profile{
-  margin-top: 180px; 
   height: 68px;
   width: 68px;
   border: 1px solid black;
@@ -559,7 +769,6 @@ textarea {
   border-radius: 50%;
 }
 .name{
-  margin-top: 190px;
   margin-left: 15px;
   float: left;
 }
@@ -568,19 +777,13 @@ textarea {
 }
 
 .trending_products{
-  width: 70%;
   padding-top: 10px;
   margin: 0px auto;
 }
 .trending_products p, .trending_products h2{
   text-align: center;
 }
-.trending_products .cart{
-  width: 20%;
-  margin: 23px;
-  float: left;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
-}
+
 .trending_products .cart img{
   width: 100%;
   height: 100%;
@@ -588,9 +791,6 @@ textarea {
 .trending_products .cart p{
   padding-top: 15px;
   text-align: center;
-}
-.btn{
-  margin-left: 43%;
 }
 .button {
   height: 40px;
@@ -609,65 +809,33 @@ textarea {
 .banner1 img{
   width: 100%;
 }
-.banner1 .img_txt{
-  color: black;
-  position: absolute;
-  margin: 0px auto;
-  top: 10%;
-  left: 15%;
-}
-.banner1 .img_txt .button{
-  height: 40px;
-  width: 120px;
-  border: none;
-  color: white;
-  background: #81ac27;
-  border-radius: 25px;
-  margin: 10px;
-}
+
 
 .mostview_products{
-  width: 70%;
   padding-top: 10px;
   margin: 0px auto;
 }
 .mostview_products p, .mostview_products h2{
   text-align: center;
 }
-.mostview_products .cart{
-  width: 20%;
-  margin: 23px;
-  float: left;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
-}
 .mostview_products .cart img{
   width: 100%;
   height: 100%;
 }
-.mostview_products .cart p{
-  padding-top: 15px;
-  text-align: center;
-}
+
 
 .mostview_contetnt{
-  position: relative;
-  width: 70%;
   margin: 0px auto;
 }
-.mostview_contetnt .mostviewfood1{
-  width: 48%;
-  margin: 1%;
-  float: left;
-}
+
 .mostview_contetnt .mostviewfood1 img{
+  filter: brightness(50%);
   width: 100%;
 }
-.mostview_contetnt .mostviewfood2{
-  width: 48%;
-  margin: 1%;
-  float: left;
-}
+
+
 .mostview_contetnt .mostviewfood2 img{
+  filter: brightness(50%);
   width: 100%;
 }
 .mostview_contetnt ul {
@@ -685,7 +853,7 @@ textarea {
 .mostview_contetnt li a {
   display: block;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px 8px;
   text-decoration: none;
 }
 .mostview_contetnt li a:hover{
@@ -693,37 +861,16 @@ textarea {
 }
 
 .featured_products{
-  position: relative;
-  width: 70%;
   margin: 0px auto;
 }
 
-.featured_products .product1{
-  width: 48%;
-  margin: 1%;
-  float: left;
-}
 .featured_products .product1 img{
   width: 100%;
 }
-.featured_products .product2{
-  width: 48%;
-  margin: 1%;
-  float: left;
-}
-.featured_products .foodproduct{
-  width: 40%;
-  margin: 20px;
-  float: left;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
-}
+
 .featured_products .foodproduct img{
   width: 100%;
   height: 100%;
-}
-.featured_products .foodproduct p{
-  padding-top: 15px;
-  text-align: center;
 }
 
 .banner2{
@@ -733,27 +880,46 @@ textarea {
 .banner2 img{
   width: 100%;
 }
-.banner2 .img_txt{
-  color: black;
-  position: absolute;
-  margin: 0px auto;
-  bottom: 60px;
-  left: 15%;
-}
+
 .ourblog{
-  width: 70%;
   margin: 0px auto;
 }
 .ourblog h2{
   text-align: center;
 }
 .ourblog .blog{
-  width: 30%;
-  padding: 15px;
+  padding: 5px;
   float: left;
+  margin-bottom: 20px;
+
 }
 .ourblog .blog img{
+  filter: brightness(50%);
   width: 100%;
+  
+}
+footer{
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+}
+footer img{
+   filter: brightness(50%);
+  width: 100%;
+}
+.container{
+  top: 200px;
+  position: absolute;
+  color: white;
+}
+.myaccount ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.myaccount li {
+  display: block;
 }
 
 /* ==========================================================================
